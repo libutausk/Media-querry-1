@@ -1,0 +1,53 @@
+body {
+            margin: 0;
+        }
+        
+        section {
+            background: dodgerblue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        h2 {
+            color: #FFF;
+        }
+        
+        div {
+            margin: 20px;
+        }
+
+        @media only screen and (min-width: 480px) {
+            div {
+                max-width: calc((100% / 2) - 40px);
+            }
+            section {
+                background: tomato;
+            }
+            h2 {
+                color: darkcyan;
+            }
+        }
+
+        @media only screen and (min-width: 780px) {
+            div {
+                max-width: calc((100% / 3) - 40px);
+            }
+            section {
+                background: orange
+            }
+            h2 {
+                color: brown;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            div {
+                max-width: calc((100% / 4) - 40px);
+            }
+            section {
+                background: lightgray;
+            }
+            h2 {
+                color: #000;
+            }
+        }
